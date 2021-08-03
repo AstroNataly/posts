@@ -1,5 +1,3 @@
-package ru.netology
-
 import java.util.*
 
 data class Post(
@@ -12,11 +10,11 @@ data class Post(
     val replyOwnerId: Int,
     val replyPostId: Int,
     val friendsOnly: Boolean,
-    val comments: Objects,
-    val copyright: Objects,
-    val likes: Objects,
-    val reposts: Objects,
-    val views: Objects,
+    val comments: Comments,
+    val copyright: Copyright,
+    val likes: Likes,
+    val reposts: Reposts,
+    val views: Views,
     val postType: String,
     val signerId: Int,
     val canPin: Boolean,
@@ -25,7 +23,8 @@ data class Post(
     val isPinned: Boolean,
     val markedAsAds: Boolean,
     val isFavorite: Boolean,
-    val postponedId: Boolean
+    val donut: Donut,
+    val postponedId: Int
 
 )
 
