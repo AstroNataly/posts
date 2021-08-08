@@ -1,4 +1,4 @@
-import java.util.*
+package ru.netology
 
 class Donut (
     val isDonut: Boolean,

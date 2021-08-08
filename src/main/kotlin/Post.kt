@@ -1,4 +1,4 @@
-import java.util.*
+package ru.netology
 
 data class Post(
     val id: Int,
@@ -27,4 +27,3 @@ data class Post(
     val postponedId: Int
 
 )
-

@@ -1,3 +1,4 @@
+package ru.netology
 
 class Comments (
     val count: Int,

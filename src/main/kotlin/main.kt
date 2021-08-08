@@ -1,3 +1,4 @@
+package ru.netology
 
 fun main() {
     val originalComments = Comments(count = 1, canPost = true, groupsCanPost = false, canClose = false, canOpen = false)
@@ -39,10 +40,15 @@ fun main() {
         isFavorite = true,
         donut = originDonut,
         postponedId = 2629743
-
-
-
     )
+    println(originalPost)
+
+    val nextPost = WallService.add(originalPost.copy())
+    println(nextPost)
+
+
 
 
 }
+
+
