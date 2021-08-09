@@ -46,8 +46,8 @@ fun main() {
     val nextPost = WallService.add(originalPost.copy())
     println(nextPost)
 
-
-
+    val newtPost = WallService.update(originalPost)
+    println(newtPost)
 
 }
 
