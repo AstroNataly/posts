@@ -1,4 +1,4 @@
-package ru.netology
+
 
 class Likes (
     val count: Int,

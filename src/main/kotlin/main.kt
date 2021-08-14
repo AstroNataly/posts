@@ -1,4 +1,4 @@
-package ru.netology
+
 
 fun main() {
     val originalComments = Comments(count = 1, canPost = true, groupsCanPost = false, canClose = false, canOpen = false)
@@ -46,7 +46,7 @@ fun main() {
     val nextPost = WallService.add(originalPost.copy())
     println(nextPost)
 
-    val newtPost = WallService.update(originalPost)
+    val newtPost = WallService.updatingAnOldPost(nextPost)
     println(newtPost)
 
 }

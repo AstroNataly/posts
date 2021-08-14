@@ -1,4 +1,4 @@
-package ru.netology
+
 
 class Copyright (
     val id: Int,

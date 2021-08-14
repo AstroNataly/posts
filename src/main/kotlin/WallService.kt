@@ -1,4 +1,4 @@
-package ru.netology
+
 
 object WallService {
     private var posts = emptyArray<Post>()
@@ -13,9 +13,9 @@ object WallService {
         return posts.last()
     }
 
-    fun updatingAnOldPost(id: Int) {
+    fun updatingAnOldPost(post: Post): Post {
         for ((index, post) in posts.withIndex()) {
-            if (post.id == id) {
+            if (post.id == post.id) {
                 posts[index] = post.copy(
                     id = post.id + 1,
                     ownerId = post.ownerId,
@@ -41,20 +41,16 @@ object WallService {
                     isFavorite = false,
                     donut = Donut(false, 124, Placeholder("g"), false, "opkj" + "k"),
                     postponedId = post.postponedId + 1
-
                 )
 
-            } else false
+            } else {
+                post
+            }
         }
+        return posts.last()
     }
 
-    fun update(post: Post): Boolean {
-        for ((index, post) in posts.withIndex()) {
-            if (post.id == post.id) updatingAnOldPost(post.id) else false
 
-       }
-        return true
-    }
 
 
 
