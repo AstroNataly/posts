@@ -1,8 +1,8 @@
-
+package ru.netology
 
 class Likes (
-    val count: Int,
-    val userLikes: Boolean,
-    val canLikes: Boolean,
-    val canPublish: Boolean
+    val count: Int = 10,
+    val userLikes: Boolean = true,
+    val canLikes: Boolean = true,
+    val canPublish: Boolean = true
 )

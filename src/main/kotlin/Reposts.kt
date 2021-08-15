@@ -1,6 +1,6 @@
-
+package ru.netology
 class Reposts (
-    val count: Int,
-    val userReposted: Boolean
+    val count: Int = 1,
+    val userReposted: Boolean = true
 
 )

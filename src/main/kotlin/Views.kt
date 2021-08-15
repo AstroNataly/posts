@@ -1,5 +1,4 @@
-
+package ru.netology
 class Views (
-    val count: Int
-
+    val count: Int = 17
 )
