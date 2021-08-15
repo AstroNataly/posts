@@ -1,6 +1,6 @@
 package ru.netology
 
-class Donut (
+data class Donut (
     val isDonut: Boolean = false,
     val paidDuration: Int = 2629743,
     val placeholder: Placeholder = Placeholder(),

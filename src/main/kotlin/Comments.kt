@@ -1,6 +1,6 @@
 package ru.netology
 
-class Comments (
+data class Comments (
     val count: Int = 1,
     val canPost: Boolean = true,
     val groupsCanPost: Boolean = false,

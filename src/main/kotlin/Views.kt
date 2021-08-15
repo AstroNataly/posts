@@ -1,4 +1,4 @@
 package ru.netology
-class Views (
+data class Views (
     val count: Int = 17
 )
