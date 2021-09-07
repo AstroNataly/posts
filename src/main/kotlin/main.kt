@@ -12,6 +12,7 @@ fun main() {
     val newtPost = WallService.updatingAnOldPost(nextPost)
     println(newtPost)
 
+
 }
 
 

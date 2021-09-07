@@ -10,18 +10,18 @@ class WallServiceTest {
     fun add_showAddingNewPost() {
         val service = WallService
 
-        val result = service.add(Post(12))
+        val result = service.add(Post(11))
 
-        assertEquals(result, Post(13))
+        assertEquals(result, Post(12))
     }
 
     @Test
     fun updatingAnOldPost() {
         val service = WallService
-        service.add(Post(12))
-        service.add(Post(13))
-        service.add(Post(14))
-        val update = Post(13, 23, 56, 698, 162000467)
+        service.add(Post(123))
+        service.add(Post(489))
+        service.add(Post(1896))
+        val update = Post(124, 23, 57)
 
         val result = service.updatingAnOldPost(update)
 
@@ -31,10 +31,10 @@ class WallServiceTest {
     @Test
     fun updatingFalse() {
         val service = WallService
-        service.add(Post(12))
-        service.add(Post(13))
-        service.add(Post(14))
-        val update = Post(9, 23, 56, 698, 162000467)
+        service.add(Post(112))
+        service.add(Post(131))
+        service.add(Post(154))
+        val update = Post(1)
 
         val result = service.updatingAnOldPost(update)
 
