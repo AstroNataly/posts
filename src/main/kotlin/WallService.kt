@@ -14,8 +14,8 @@ object WallService {
     }
 
     fun updatingAnOldPost(post: Post): Boolean {
-        for ((index, post) in posts.withIndex()) {
-            if (post.id == post.id) {
+        for ((index, newPost) in posts.withIndex()) {
+            if (newPost.id == post.id) {
                 posts[index] = post.copy(ownerId = post.ownerId, date = post.date)
                 return true
             }
