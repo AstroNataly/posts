@@ -1,5 +1,7 @@
 package ru.netology
 
+import org.jetbrains.annotations.Nullable
+
 data class Post(
     val id: Int,
     val ownerId: Int = 23,
@@ -24,6 +26,9 @@ data class Post(
     val markedAsAds: Boolean = true,
     val isFavorite: Boolean = true,
     val donut: Donut = Donut(),
-    val postponedId: Int = 96873
-
+    val postponedId: Int = 96873,
+    val postSource: Any? = 0,
+    val geo: Any? = 0,
+    val copyHistory: Any? = 0
+    
 )
