@@ -1,6 +1,7 @@
 package ru.netology
 
 import org.jetbrains.annotations.Nullable
+import kotlin.reflect.typeOf
 
 data class Post(
     val id: Int,
@@ -29,6 +30,7 @@ data class Post(
     val postponedId: Int = 96873,
     val postSource: Any? = 0,
     val geo: Any? = 0,
-    val copyHistory: Any? = 0
+    val copyHistory: Any? = 0,
+    val attachment: Attachment
     
 )
