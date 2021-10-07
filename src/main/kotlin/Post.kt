@@ -31,6 +31,10 @@ data class Post(
     val postSource: Any? = 0,
     val geo: Any? = 0,
     val copyHistory: Any? = 0,
-    val attachment: Attachment
+    val attachmentVideo: AttachmentVideo,
+    val attachmentAudio: AttachmentAudio,
+    val attachmentLink: AttachmentLink,
+    val attachmentPhoto: AttachmentPhoto,
+    val attachmentDoc: AttachmentDoc
     
 )
