@@ -1,6 +1,7 @@
 package ru.netology
 
-class AttachmentVideo (
-    override val type: String = "video",
+class AttachmentVideo(
     val video: Video
-) : Attachment
+) : Attachment {
+    override val type: String = "video"
+}
