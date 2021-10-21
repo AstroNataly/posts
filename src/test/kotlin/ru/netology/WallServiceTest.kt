@@ -44,8 +44,8 @@ class WallServiceTest {
     @Test (expected = PostNotFoundException::class)
     fun createComment() {
         val service = WallService
-        //service.createComment(Comment(112, 12))
-        //service.createComment(Comment(131, 11))
+        service.createComment(Comment(112, 12))
+        service.createComment(Comment(131, 11))
         service.add(Post(11))
         service.add(Post(12))
         val create = Comment(120, 11)
@@ -58,8 +58,8 @@ class WallServiceTest {
     @Test(expected = PostNotFoundException::class)
     fun shouIdTrow(){
         val service = WallService
-        //service.createComment(Comment(112, 12))
-        //service.createComment(Comment(131, 11))
+        service.createComment(Comment(112, 12))
+        service.createComment(Comment(131, 11))
         service.add(Post(11))
         service.add(Post(12))
         val create = Comment(120, 110)
